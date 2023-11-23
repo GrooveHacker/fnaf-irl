@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/main.css">
+        <script src="/jquery-3.6.0.min.js"></script>
+        <script src="/guard.js" defer></script>
+    </head>
+    <body>
+        <div id="camera_screen">
+            <div class="name_bar">Cameras</div>
+            <% for (let i = 0; i < opt.cameras.length; i++) { %>
+                <img src="<%= opt.cameras[i] %>"
+                    <% if (i == 0) { %>
+                        style="display: block;"
+                    <% } %>
+                >
+            <% } %>
+            <div class="track">
+                <% for (let i = 0; i < opt.cameras.length; i++) { %>
+                    <div class="camera_button"
+                        <% if (i == 0) { %>
+                            data-selected
+                        <% } %>
+                    >
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <div id="objective_screen">
+            <div class="name_bar">Terminal</div>
+            <div id="next_stage">START ROUND</div>
+            <div id="download">
+                <div class="node" data-hub></div>
+                <div class="node" data-source="0">A</div>
+                <div class="node" data-source="1">B</div>
+                <div class="node" data-source="2">C</div>
+                <div class="node" data-source="3">D</div>
+                <svg class="transfer_line" viewBox="0 0 100 10" data-source="0">
+                    <line x1="0" y1="5" x2="100" y2="5"></line>
+                </svg>
+                <svg class="transfer_line" viewBox="0 0 100 10" data-source="1">
+                    <line x1="0" y1="5" x2="100" y2="5"></line>
+                </svg>
+                <svg class="transfer_line" viewBox="0 0 100 10" data-source="2">
+                    <line x1="0" y1="5" x2="100" y2="5"></line>
+                </svg>
+                <svg class="transfer_line" viewBox="0 0 100 10" data-source="3">
+                    <line x1="0" y1="5" x2="100" y2="5"></line>
+                </svg>
+            </div>
+            <p class="caption" id="download_caption">DOWNLOADING EXPLOIT</p>
+            <div id="progress">
+                <div class="bar"></div>
+            </div>
+            <p class="caption" id="command_caption">RUN EXPLOIT</p>
+            <ul id="command_list">
+                <li data-selected></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <input id="command" spellcheck="false" autocapitalize="false">
+            <p class="caption" id="select_caption">CLICK THE IDENTICAL BYTE</p>
+            <div id="upload">
+                <div class="target"></div>
+                <div class="option" data-option="0"></div>
+                <div class="option" data-option="1"></div>
+                <div class="option" data-option="2"></div>
+                <div class="option" data-option="3"></div>
+            </div>
+            <p id="select_progress">0/300</p>
+        </div>
+        <div id="error_screen">
+            <div id="error_box">
+                <p class="title">SYSTEM ERROR</p>
+                <p>Repair Required</p>
+            </div>
+        </div>
+    </body>
+</html>
