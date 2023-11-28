@@ -47,8 +47,8 @@ In the project folder, there is a **.env** file for configuring your game. It co
 | Parameter | Description |
 | - | - |
 | `SERVER_PORT` | The game server will run on this port. The default port is `80`. |
-| `CAM_URLS` | Contains the URLs for each camera stream in order.<br> Ex: `http://192.168.1.100:8080/video http://192.168.1.101:4747/video` |
-| `QR_CODES` | `string` |
+| `CAM_URLS` | Contains the URLs for each camera stream in order.<br>(Ex: `http://192.168.1.100:8080/video http://192.168.1.101:4747/video`) |
+| `QR_CODES` | The number of QR codes you want in your game |
 | `SCAN_ALERT_TIME` | `string` |
 
 
