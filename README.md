@@ -12,6 +12,7 @@ You will need the following:
 - A computer with a keyboard and mouse
 - A smartphone for each player (including the guard)
 - One or more IP cameras (A phone can serve as an IP camera as well)
+- A paper printout/screen for displaying each QR code
 
 ### 2. 🛜 Wi-Fi network
 Connect each device to your Wi-Fi network so that they can connect to each other.
@@ -49,8 +50,9 @@ In the project folder, there is a **.env** file for configuring your game. It co
 | `SERVER_PORT` | The game server will run on this port. The default port is `80`. |
 | `CAM_URLS` | Contains the URLs for each camera stream in order.<br>Ex: `http://192.168.1.100:8080/video http://192.168.1.101:4747/video` |
 | `QR_CODES` | The number of QR codes you want in your game |
-| `SCAN_ALERT_TIME` | `string` |
+| `SCAN_ALERT_TIME` | The number of seconds following the start of an attack after which the guard will be notified through a sound effect |
 
+The game server must be restarted to update any changes made to the **.env** file.
 
 ## Start the Game
 
