@@ -121,7 +121,7 @@ Your goal is to hit the `ATTACK` button on the guard's phone and jumpscare them.
 
 3. As you move around, start scanning any QR codes you come across.
 
-4. In the event that your scanned QR code is a `FAIL`, continue moving around.
+4. In the event that your scanned QR code is a `FAIL`, continue moving around and scanning QR codes.
 
 5. In the event that your scanned QR code is a `SUCCESS`, it's your turn to attack the guard.
 
