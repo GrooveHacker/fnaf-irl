@@ -111,7 +111,7 @@ Your goal is to complete your tasks on the computer without getting caught by an
 
 - The phone cannot be moved from its spot.
 
-6. In the event that something *desirable* enters room, you may shine the flashlight in its eyes at any time to make it leave.
+6. In the event that something *desirable* enters the room, you may shine the flashlight in its eyes at any time to make it leave.
 
 - Before returning to the computer, the flashlight must be returned to its spot next to your phone.
 
