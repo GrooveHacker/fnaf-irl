@@ -4,6 +4,8 @@ This is a fan-made version of Five Nights at Freddy's in real life with you as t
 
 In this version of the game, you have broken into a secure facility to hack into a computer and exfiltrate data. Having tripped the facility's security system, the animatronics guarding the facility are now loose and coming to find you. You must hack into the computer and exfiltrate the data before you are caught.
 
+*This game is best played at night.*
+
 ## Setup the Game
 
 ### 1. 🕹️ Equipment
@@ -13,6 +15,7 @@ You will need the following:
 - A smartphone for each player (including the guard)
 - One or more IP cameras (A phone can serve as an IP camera as well)
 - A paper printout/screen for displaying each QR code
+- A flashlight
 
 ### 2. 🛜 Wi-Fi network
 Connect each device to your Wi-Fi network so that they can connect to each other.
@@ -57,7 +60,7 @@ The game server must be restarted to update any changes made to the **.env** fil
 ### 6. 🤏 Almost There!
 Now it's time to set up your QR codes.
 
-For 2-3 animatronics, 5-6 QR codes are recommended.
+For 2-3 animatronics, 4-6 QR codes are recommended.
 
 For 4+ animatronics, 8+ QR codes are recommended.
 
@@ -81,6 +84,21 @@ Generate a QR code by using a service such as QR server:
 #### Placing the QR Codes
 
 These QR codes should be displayed evenly throughout the play space, with each in the vicinity of a security camera. An animatronic attempting to scan the QR code should be visible to the guard when viewing the camera.
+
+## How to Play
+
+Find a room for the guard to be in, and a room for the animatronics to start in. These rooms should ideally be at opposite ends of the play space.
+
+Set up your cameras and QR codes in several areas scattered around the play space, making sure that each QR code is in the vicinity of a security camera.
+
+### Guard
+Your goal is to complete your tasks on the computer without getting caught by an animatronic.
+
+Open the browser on your computer and go to this link: `http://localhost:<game server port>/guard`
+
+Open the browser on your phone and go to this link: `http://<IP address of your computer>:<game server port>/remote`
+
+
 
 ## Start the Game
 
