@@ -112,6 +112,8 @@ Your goal is to complete your tasks on the computer without getting caught by an
 
 - Before returning to the computer, the flashlight must be returned to its spot next to your phone.
 
+**TIP:** Use the cameras to check if an animatronic is scanning a QR code. If you see their screen turn green, they're coming after you.
+
 ### Animatronic
 Your goal is to hit the `ATTACK` button on the guard's phone.
 
@@ -132,6 +134,8 @@ Doing so will trigger an error on the guard's computer, forcing them to get up f
 - If they shine the flashlight at you before you hit the button, your attack has failed and you must return to the starting room.
 
 - Once you have returned, you may continue moving around and scanning QR codes.
+
+**TIP:** Conspire with your fellow animatronics. Try and distract the guard so they won't notice when you scan a QR code.
 
 ## Start the Game
 
