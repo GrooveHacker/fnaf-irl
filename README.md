@@ -100,7 +100,9 @@ Your goal is to complete your tasks on the computer without getting caught by an
 
 3. Set up your computer as far from the door as possible.
 
-4. Place your phone along with the flashlight in a spot inaccessible from the computer and closer to the door, such as on a table.<br>Make sure the `ATTACK` button is closer to the door than the `REPAIR` button.
+4. Place your phone along with the flashlight in a spot inaccessible from the computer and closer to the door, such as on a table.
+
+- Make sure the `ATTACK` button is closer to the door than the `REPAIR` button.
 
 5. In the event of an error, you must leave the computer and push the `REPAIR` button on your phone to fix it.
 
