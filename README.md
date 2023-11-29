@@ -1,3 +1,4 @@
+![head](https://raw.githubusercontent.com/GrooveHacker/animatromo-game-irl/main/public/head.png)
 
 # Five Nights at Freddy's IRL
 This is a fan-made version of Five Nights at Freddy's in real life with you as the guard and your friends as the animatronics.
