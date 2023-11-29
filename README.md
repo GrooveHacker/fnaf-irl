@@ -102,7 +102,7 @@ Your goal is to complete your tasks on the computer without getting caught by an
 
 4. Place your phone along with the flashlight in a spot closer to the door, such as on a table.
 
-    - Make sure that the `ATTACK` button is closer to the door than the `REPAIR` button.
+  - Make sure that the `ATTACK` button is closer to the door than the `REPAIR` button.
 
 ## Start the Game
 
