@@ -71,6 +71,9 @@ For every number from 1 to `QR_CODES`, there is a link on the game server which 
 Ex. `http://192.168.1.100/attack/5`
 
 
+
+
+
 Each one of these links should be placed behind a QR code and printed out or displayed in a scannable fashion.
 
 #### Placing
