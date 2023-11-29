@@ -162,6 +162,7 @@ const game = {
                 break;
             case 4:
                 this.socket.send(JSON.stringify(["complete"]));
+                $("#win_screen").css("display", "flex");
                 break;
         }
     },
@@ -344,6 +345,10 @@ $(".option").on("click", function() {
         game.needs_repair();
     }
 });
+
+$("#win_screen .restart").on("click", function() {
+    window.location.reload();
+})
 
 setInterval(() => {
     $("#camera_screen img").each(function() {

@@ -465,7 +465,7 @@ body {
     display: none;
 }
 
-#error_screen {
+#error_screen, #win_screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -598,4 +598,23 @@ body {
 
 .spectator_list li span.good {
     color: var(--good2);
+}
+
+#win_screen {
+    flex-direction: column;
+}
+
+#win_screen .title {
+    font-family: "regular", Arial, monospace;
+    font-size: 50px;
+    color: white;
+}
+
+#win_screen .restart {
+    background: white;
+    font-family: "regular", Arial, monospace;
+    font-size: 25px;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
 }

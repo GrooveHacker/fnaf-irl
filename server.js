@@ -80,6 +80,7 @@ app.ws("/game", (socket, req) => {
         switch (msg[0]) {
             case "guard":
                 game.guard = socket;
+                game.repaired = false;
                 break;
             case "remote":
                 game.remote = socket;
@@ -154,7 +155,11 @@ app.ws("/game", (socket, req) => {
 })
 
 app.listen(process.env.SERVER_PORT, () => {
-    console.log(`[*] Server running on port ${process.env.SERVER_PORT}`);
+    console.log(`+-----------------------------+
+| Five Nights at Freddy's IRL |
+|                             |
+|  Server running on port ${process.env.SERVER_PORT}  |
++-----------------------------+`);
 });
 
 function generate_attacker_num() {
