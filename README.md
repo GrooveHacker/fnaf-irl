@@ -1,9 +1,9 @@
 
 # Five Nights at Freddy's IRL
-
 This is a fan-made version of Five Nights at Freddy's in real life with you as the guard and your friends as the animatronics.
 
-In this version of the game, you (the guard) have broken into a secure facility to hack into a computer and exfiltrate data. Having tripped the facility's security system, the animatronics guarding the facility are now loose and coming to find you. You must hack into the computer and exfiltrate the data before you are caught.
+In this version of the game, you have broken into a secure facility to hack into a computer and exfiltrate data. Having tripped the facility's security system, the animatronics guarding the facility are now loose and coming to find you. You must hack into the computer and exfiltrate the data before you are caught.
+
 ## Setup the Game
 
 ### 1. 🕹️ Equipment
@@ -33,7 +33,7 @@ For each of the apps above, here's the URL to access your camera:
 
 `http://<your phone's IP address>:<port number>/video`
 
-Ex. `http://192.168.1.100:8080/video`
+Ex. `http://192.168.1.101:8080/video`
 
 The default port for Droid Cam is `4747`, and the default for IP Webcam is `8080`.
 
@@ -47,17 +47,34 @@ In the project folder, there is a **.env** file for configuring your game. It co
 
 | Parameter | Description |
 | - | - |
-| `SERVER_PORT` | The game server will run on this port. The default port is `80`. |
-| `CAM_URLS` | Contains the URLs for each camera stream in order.<br>Ex: `http://192.168.1.100:8080/video http://192.168.1.101:4747/video` |
+| `SERVER_PORT` | The game server will run on this port. The default port is `80`.<br>Since `80` is the standard port for websites, it is also not necessary in the URL. |
+| `CAM_URLS` | Contains the URLs for each camera stream in order.<br>Ex: `http://192.168.1.101:8080/video http://192.168.1.102:4747/video` |
 | `QR_CODES` | The number of QR codes you want in your game |
 | `SCAN_ALERT_TIME` | The number of seconds following the start of an attack after which the guard will be notified through a sound effect |
 
 The game server must be restarted to update any changes made to the **.env** file.
 
+### 6. 🤏 Almost There!
+Now it's time to set up your QR codes.
+
+For 2-3 animatronics, 5-6 QR codes are recommended.
+
+For 4+ animatronics, 8+ QR codes are recommended.
+
+#### Get the QR Codes
+Each QR code must link to a designated page on the game server. The number of these pages is specified by the `QR_CODES` parameter in the **.env** file of the game server.
+
+For every number from 1 to `QR_CODES`, there is a link on the game server which ends in that number:
+
+`http://<IP address of guard's computer>:<game server port>/attack/<link number>`
+
+Ex. `http://192.168.1.100/attack/`
+
+Each one of these hinks
+
 ## Start the Game
 
 Start the game server with Node:
-
 ```
 node server.js
 ```
