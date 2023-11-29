@@ -40,6 +40,8 @@ Ex. `http://192.168.1.101:8080/video`
 
 The default port for Droid Cam is `4747`, and the default for IP Webcam is `8080`.
 
+**IMPORTANT:** If your camera streams are password protected, log in to them in the browser on the guard's computer before opening the guard page.
+
 ### 4. 💻 Guard's Computer
 To run the game server, you will need to install [Node.js](https://nodejs.org/en/) on the guard's computer.
 
