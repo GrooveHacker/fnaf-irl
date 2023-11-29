@@ -102,9 +102,13 @@ Your goal is to complete your tasks on the computer without getting caught by an
 
 4. Place your phone along with the flashlight in a spot inaccessible from the computer and closer to the door, such as on a table.<br>Make sure the `ATTACK` button is closer to the door than the `REPAIR` button.
 
-5. In the event of an error, you must leave the computer and push the `REPAIR` button on your phone to fix it.<br>The phone cannot be moved from its spot.
+5. In the event of an error, you must leave the computer and push the `REPAIR` button on your phone to fix it.
 
-6. In the event that something *desirable* has entered the room, you may shine the flashlight in its eyes at any time to make it leave.<br>Before returning to the computer, the flashlight must be returned to its spot next to your phone.
+- The phone cannot be moved from its spot.
+
+6. In the event that something *desirable* has entered the room, you may shine the flashlight in its eyes at any time to make it leave.
+
+- Before returning to the computer, the flashlight must be returned to its spot next to your phone.
 
 ### Animatronic
 Your goal is to hit the `ATTACK` button on the guard's phone and jumpscare them.
@@ -117,7 +121,11 @@ Your goal is to hit the `ATTACK` button on the guard's phone and jumpscare them.
 
 4. In the event that your scanned QR code is a `FAIL`, continue moving around.
 
-5. In the event that your scanned QR code is a `SUCCESS`, it's your turn to attack the guard.<br>Make your way to the guard's room and attempt to hit the `ATTACK` button on their phone at any time.<br>If they shine the flashlight at you before you hit the button, your attack has failed and you must return to the starting room.
+5. In the event that your scanned QR code is a `SUCCESS`, it's your turn to attack the guard.
+
+- Make your way to the guard's room and attempt to hit the `ATTACK` button on their phone at any time.
+
+- If they shine the flashlight at you before you hit the button, your attack has failed and you must return to the starting room.
 
 
 
