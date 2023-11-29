@@ -94,11 +94,15 @@ Set up your cameras and QR codes in several areas scattered around the play spac
 ### Guard
 Your goal is to complete your tasks on the computer without getting caught by an animatronic.
 
-Open the browser on your computer and go to this link: `http://localhost:<game server port>/guard`
+1. Open the browser on your computer and go to `http://localhost:<game server port>/guard`
 
-Open the browser on your phone and go to this link: `http://<IP address of your computer>:<game server port>/remote`
+2. Open the browser on your phone and go to `http://<IP address of your computer>:<game server port>/remote`
 
+3. Set up your computer as far from the door as possible.
 
+4. Place your phone along with the flashlight in a spot closer to the door, such as on a table.
+
+5. 
 
 ## Start the Game
 
