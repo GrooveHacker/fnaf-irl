@@ -47,7 +47,7 @@ In the project folder, there is a **.env** file for configuring your game. It co
 
 | Parameter | Description |
 | - | - |
-| `SERVER_PORT` | The game server will run on this port. The default port is `80`.<br>Since `80` is the standard port for websites, it is also not necessary in the URL. |
+| `SERVER_PORT` | The game server will run on this port. The default port is `80`.<br>Since `80` is the standard port for websites, it is also not necessary in the URL unless modified. |
 | `CAM_URLS` | Contains the URLs for each camera stream in order.<br>Ex: `http://192.168.1.101:8080/video http://192.168.1.102:4747/video` |
 | `QR_CODES` | The number of QR codes you want in your game |
 | `SCAN_ALERT_TIME` | The number of seconds following the start of an attack after which the guard will be notified through a sound effect |
@@ -68,9 +68,12 @@ For every number from 1 to `QR_CODES`, there is a link on the game server which 
 
 `http://<IP address of guard's computer>:<game server port>/attack/<link number>`
 
-Ex. `http://192.168.1.100/attack/`
+Ex. `http://192.168.1.100/attack/5`
 
-Each one of these hinks
+
+Each one of these links should be placed behind a QR code and printed out or displayed in a scannable fashion.
+
+#### Placing
 
 ## Start the Game
 
