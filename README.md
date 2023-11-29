@@ -61,8 +61,8 @@ For 2-3 animatronics, 5-6 QR codes are recommended.
 
 For 4+ animatronics, 8+ QR codes are recommended.
 
-#### Get the QR Codes
-Each QR code must link to a designated page on the game server. The number of these pages is specified by the `QR_CODES` parameter in the **.env** file of the game server.
+#### Get the Links
+Each QR code must link to a designated page on the game server. The number of these pages is specified by the `QR_CODES` parameter in the **.env** file.
 
 For every number from 1 to `QR_CODES`, there is a link on the game server which ends in that number:
 
@@ -70,13 +70,17 @@ For every number from 1 to `QR_CODES`, there is a link on the game server which 
 
 Ex. `http://192.168.1.100/attack/5`
 
+#### Generate the QR Codes
 
+Each link must be transformed into a QR code and printed out or displayed.
 
+Generate a QR code by using a service such as QR server:
 
+`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://192.168.1.100/attack/5`
 
-Each one of these links should be placed behind a QR code and printed out or displayed in a scannable fashion.
+#### Placing the QR Codes
 
-#### Placing
+These QR codes should be displayed evenly throughout the play space, with each in the vicinity of a security camera. An animatronic attempting to scan the QR code should be visible to the guard when viewing the camera.
 
 ## Start the Game
 
