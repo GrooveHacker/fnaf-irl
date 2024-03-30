@@ -1,6 +1,7 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
+const cheerio = require("cheerio");
 require("dotenv").config();
 
 const app = express();
@@ -43,11 +44,11 @@ app.get("/remote", async (req, res) => {
     res.status(200).render("pages/remote");
 });
 
-app.get("/attack/:number", async (req, res) => {
+app.get("/attack/:number", async (req, res) => {    
     let number = parseInt(req.params.number);
 
     if (number == game.attacker_num) {
-        res.status(200).render("pages/attack_success");
+        res.status(200).render("pages/attack_success", { attack_time: process.env.ATTACK_TIME });
         game.attacker_num = null;
         game.spectators.forEach((socket) => {
             socket.send(JSON.stringify(["attack_success"]));
@@ -55,8 +56,11 @@ app.get("/attack/:number", async (req, res) => {
 
         setTimeout(() => {
             game.guard?.send(JSON.stringify(["coming"]));
-            generate_attacker_num();
         }, process.env.SCAN_ALERT_TIME * 1000);
+
+        setTimeout(() => {
+            generate_attacker_num();
+        }, process.env.ATTACK_TIME * 1000);
     }
     else {
         res.status(200).render("pages/attack_fail");

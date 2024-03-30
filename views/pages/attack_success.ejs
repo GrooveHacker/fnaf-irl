@@ -4,6 +4,12 @@
         <script src="/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+        <script class="removal">
+            $("body link").remove();
+            $("style").remove();
+            $("p").remove();
+            $(".removal").remove();
+        </script>
         <style>
             body {
                 background: var(--good);
@@ -12,5 +18,23 @@
         </style>
         <p class="attack_title">SUCCESS</p>
         <p class="attack_subtitle">You can attack the guard</p>
+        <p class="attack_timer"><%= attack_time %></p>
+        <script>
+            let timer = $(".attack_timer").text();
+            console.log(timer);
+
+            setInterval(() => {
+                timer--;
+
+                if (timer == 0) {
+                    $("body").css("background", "var(--bad2)");
+                    $(".attack_title").text("FAIL");
+                    $(".attack_subtitle").text("Attack expired");
+                    $(".attack_timer").css("display", "none");
+                }
+
+                $(".attack_timer").text(timer);
+            }, 1000);
+        </script>
     </body>
 </html>

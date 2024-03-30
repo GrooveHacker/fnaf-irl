@@ -15,28 +15,28 @@ const game = {
     sounds: {
         error: (() => {
             let sound = new Audio("/error.wav");
-            sound.volume = 0.3;
+            sound.volume = 1;
             return sound;
         })(),
         bg: (() => {
             let sound = new Audio("/bg.wav");
-            sound.volume = 0.03;
+            sound.volume = 0.1;
             sound.loop = true;
             return sound;
         })(),
         coming: (() => {
             let sound = new Audio("/coming.wav");
-            sound.volume = 0.07;
+            sound.volume = 0.3;
             return sound;
         })(),
         repairing: (() => {
             let sound = new Audio("/repairing.wav");
-            sound.volume = 0.3;
+            sound.volume = 1;
             return sound;
         })(),
         repaired: (() => {
             let sound = new Audio("/repaired.wav");
-            sound.volume = 0.3;
+            sound.volume = 1;
             return sound;
         })()
     },

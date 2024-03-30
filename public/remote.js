@@ -55,6 +55,7 @@ $(".big_button").on("click", function() {
 
 $(".big_button.attack").on("click", function() {
     game.socket.send(JSON.stringify(["attack"]));
+    $(".attack_success").css("display", "flex");
 })
 
 game.poll();
