@@ -128,9 +128,11 @@ Doing so will trigger an error on the guard's computer, forcing them to get up f
 
 3. As you move around, start scanning any QR codes you come across.
 
-4. In the event that your scanned QR code is a `FAIL`, continue moving around and scanning QR codes.
+4. After following the QR code, briefly show the result to the nearby camera so the guard can see it.
 
-5. In the event that your scanned QR code is a `SUCCESS`, it's your turn to attack the guard.
+5. In the event that your scanned QR code is a `FAIL`, continue moving around and scanning QR codes.
+
+6. In the event that your scanned QR code is a `SUCCESS`, it's your turn to attack the guard.
 
 - Make your way to the guard's room and attempt to hit the `ATTACK` button on their phone at any time.
 
